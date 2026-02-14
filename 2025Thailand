@@ -1,36 +1,22 @@
-echo "# 2025Thailand" >> README.md 
-git init 
-git add README.md 
-git commit -m "first commit" 
-git branch -M main 
-git remote add origin https://github.com/hadak0107/2025Thailand.git
- git push -u origin main
-
-/memory
- ├ index.html
- └ 2025Thailand.pdf
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Memory</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2025Thailand</title>
 
   <style>
     body {
       margin: 0;
       font-family: sans-serif;
-      background: #ffffff;
+      background: #fff;
     }
-
-    .pdf-viewer {
+    .pdf {
       width: 100%;
       height: 90vh;
       border: none;
     }
-
-    .playlist {
+    .music {
       width: 100%;
       height: 380px;
       border: none;
@@ -39,16 +25,13 @@ git remote add origin https://github.com/hadak0107/2025Thailand.git
 </head>
 <body>
 
-  <!-- PDF 바로 표시 -->
-  <iframe
-    src="2025Thailand.pdf"
-    class="pdf-viewer">
-  </iframe>
+  <!-- PDF -->
+  <embed src="2025Thailand.pdf" type="application/pdf" class="pdf">
 
-  <!-- YouTube 플레이리스트 -->
+  <!-- YouTube Music Playlist -->
   <iframe
-    class="playlist"
-    src="https://www.youtube.com/embed/videoseries?list=PLL-7KVC4qvwSMOoY_EzJCxctbOZvdvJFh&si=SQMuKm9jlnNCw2HN"
+    class="music"
+    src="https://www.youtube.com/embed/videoseries?list=PLL-7KVC4qvwSMOoY_EzJCxctbOZvdvJFh"
     allow="autoplay; encrypted-media"
     allowfullscreen>
   </iframe>
