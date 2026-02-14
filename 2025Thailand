@@ -1,0 +1,7 @@
+echo "# 2025Thailand" >> README.md 
+git init 
+git add README.md 
+git commit -m "first commit" 
+git branch -M main 
+git remote add origin https://github.com/hadak0107/2025Thailand.git
+ git push -u origin main
